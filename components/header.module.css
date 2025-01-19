@@ -1,0 +1,13 @@
+.navButton {
+  /* display: block; */
+}
+
+@media (min-width: 1000px) {
+  .navButton {
+    display: none;
+  }
+}
+
+.headerLogo {
+  @apply text-xl font-semibold flex flex-row items-center gap-3;
+}

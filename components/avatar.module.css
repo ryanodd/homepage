@@ -1,0 +1,16 @@
+.avatar {
+  @apply shrink-0 rounded-full overflow-hidden shadow-md;
+}
+
+.avatar img {
+  @apply w-full h-full;
+}
+
+.avatar {
+  /* data-size="md" */
+  @apply w-8 h-8;
+}
+
+.avatar[data-size="2xl"] {
+  @apply w-32 h-32;
+}

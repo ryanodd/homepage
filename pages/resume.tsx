@@ -1,16 +1,15 @@
 import Head from "next/head"
-import Image from "next/image"
 import { Header } from "../components/Header"
 import { Main } from "../components/Main"
 import { Page } from "../components/Page"
-import styles from "../styles/Home.module.css"
 
-export default function Home() {
+export default function Resume() {
   return (
     <Page>
       <Head>
-        <title>Projects</title>
-        <meta name="description" content="Ryan Odd's projects" />
+        <title>Resume</title>
+        <meta name="description" content="Ryan Odd's resume" />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
       <Main>This is my resume</Main>

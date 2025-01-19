@@ -1,0 +1,8 @@
+.icon {
+  @apply max-w-none shrink-0;
+}
+
+.icon {
+  /* Default data-size="lg" */
+  @apply w-6 h-6;
+}

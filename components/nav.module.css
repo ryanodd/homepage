@@ -1,0 +1,57 @@
+.desktopNavContainer {
+  @apply bg-slate-50 p-2;
+  display: none;
+}
+
+@media (min-width: 1000px) {
+  .desktopNavContainer {
+    display: block;
+  }
+}
+
+.mobileNavContainer {
+  @apply absolute left-0 top-0 bottom-0 z-30 bg-slate-50 p-2 flex flex-col gap-2;
+}
+
+.mobileNavContainer[data-open="false"] {
+  display: none;
+}
+.mobileNavContainer[data-open="true"] {
+  display: flex;
+}
+
+@media (min-width: 1000px) {
+  .mobileNavContainer[data-open="true"] {
+    display: none;
+  }
+}
+
+.navOverlay[data-open="true"] {
+  @apply absolute inset-0 bg-slate-600 opacity-30 z-20;
+}
+
+@media (min-width: 1000px) {
+  .navOverlay[data-open="true"] {
+    display: none;
+  }
+}
+
+.navList {
+  width: 240px;
+  @apply h-full flex flex-col gap-0.5;
+}
+
+.navItem {
+  @apply rounded-md cursor-pointer w-full flex;
+}
+
+.navItem:hover {
+  @apply bg-gray-900 bg-opacity-5;
+}
+
+.navItem[data-active="true"] {
+}
+
+.navItem a {
+  @apply w-full h-full px-3 py-3 text-gray-800 flex flex-row  items-center gap-2;
+}

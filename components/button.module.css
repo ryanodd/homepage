@@ -1,0 +1,57 @@
+.button {
+  @apply shadow-sm flex items-center justify-center;
+}
+
+.button {
+  /* Default size: small */
+  @apply h-10 px-3 rounded-md text-base;
+}
+.button[data-icon-only="true"] {
+  @apply w-10;
+}
+
+.button[data-size="large"] {
+  @apply h-16 px-6 rounded-lg text-xl font-semibold;
+}
+.button[data-icon-only="true"][data-size="large"] {
+  @apply w-16;
+}
+
+.button[data-variant="primary"] {
+  @apply bg-emerald-500 text-white border-none;
+}
+.button[data-variant="primary"]:hover {
+  @apply bg-emerald-700;
+}
+
+.button {
+  /* Default Variant: secondary */
+  @apply bg-stone-100 border border-stone-300;
+}
+
+.button:hover {
+  @apply bg-stone-300;
+}
+
+.button[data-variant="tertiary"] {
+  @apply bg-transparent text-stone-800 border-none shadow-none;
+}
+.button[data-variant="tertiary"]:hover {
+  @apply bg-opacity-5 bg-stone-900;
+}
+
+.button:disabled {
+  @apply bg-stone-500 border-stone-500;
+}
+
+.button[data-variant="destructive"] {
+  @apply bg-red-500 text-white border-none;
+}
+
+.button[data-variant="destructive"]:hover:not(:disabled) {
+  @apply bg-red-400;
+}
+
+.unpressable {
+  opacity: 0.2;
+}
