@@ -1,0 +1,29 @@
+.sectionHeader {
+  @apply flex flex-col gap-2;
+}
+
+@media (min-width: 1000px) {
+  .sectionHeader {
+    @apply gap-4;
+  }
+}
+
+.sectionHeaderTitle {
+  @apply text-gray-900 text-4xl;
+}
+
+@media (min-width: 1000px) {
+  .sectionHeaderTitle {
+    @apply text-6xl;
+  }
+}
+
+.sectionHeaderDescription {
+  @apply text-gray-700 text-base;
+}
+
+@media (min-width: 1000px) {
+  .sectionHeaderDescription {
+    @apply text-xl;
+  }
+}

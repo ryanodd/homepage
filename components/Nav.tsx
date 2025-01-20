@@ -22,7 +22,7 @@ export const NavList = () => {
         </Link>
       </li>
       <li className={navStyles.navItem}>
-        <Link href={contactEmailUrl()} target="_blank" rel="noopener noreferrer">
+        <Link href={contactEmailUrl()}>
           <Mail />
           Contact me
         </Link>

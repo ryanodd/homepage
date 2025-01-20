@@ -1,0 +1,23 @@
+.mainContainerWithNav {
+  @apply grow flex flex-row overflow-hidden;
+}
+
+.mainContainer {
+  @apply w-full px-8 py-8 overflow-y-auto flex flex-col items-center;
+}
+
+@media (min-width: 1000px) {
+  .mainContainer {
+    @apply px-20 py-20;
+  }
+}
+
+.mainColumn {
+  @apply w-full max-w-7xl flex flex-col gap-20;
+}
+
+@media (min-width: 1000px) {
+  .mainColumn {
+    @apply gap-32;
+  }
+}

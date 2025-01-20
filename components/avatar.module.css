@@ -12,5 +12,5 @@
 }
 
 .avatar[data-size="2xl"] {
-  @apply w-32 h-32;
+  @apply w-28 h-28;
 }

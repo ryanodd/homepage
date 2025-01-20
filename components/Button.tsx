@@ -16,3 +16,13 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(({ className, .
 })
 
 Button.displayName = "Button"
+
+export type ButtonStyledAsLinkProps = ComponentPropsWithoutRef<"a"> & Props
+
+export const ButtonStyledAsLink = forwardRef<HTMLAnchorElement, ButtonStyledAsLinkProps>(
+  ({ className, ...restProps }, ref) => {
+    return <a ref={ref} {...restProps} className={`${styles.button} ${className ?? ""}`} />
+  }
+)
+
+ButtonStyledAsLink.displayName = "ButtonStyledAsLink"

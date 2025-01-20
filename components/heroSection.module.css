@@ -1,0 +1,53 @@
+.heroSection {
+  @apply flex flex-col gap-8;
+}
+
+@media (min-width: 1000px) {
+  .heroSection {
+    @apply gap-12;
+  }
+}
+
+.heroNameRow {
+  @apply font-semibold text-4xl leading-none text-gray-900;
+  @apply flex flex-row flex-wrap items-center;
+  @apply gap-4 mb-0;
+}
+
+@media (min-width: 1000px) {
+  .heroNameRow {
+    @apply text-7xl;
+    @apply gap-6;
+  }
+}
+
+.heroDescription {
+  @apply flex flex-col gap-1 text-gray-700;
+}
+
+.heroNameRow {
+  animation: hero-name-appear 600ms ease-out both;
+}
+
+.heroDescription > *:nth-child(1) {
+  animation: hero-name-appear 600ms 400ms ease-out both;
+}
+
+.heroDescription > *:nth-child(2) {
+  animation: hero-name-appear 600ms 800ms ease-out both;
+}
+
+/* .heroDescription > *:nth-child(3) {
+  animation: hero-name-appear 200ms 2000ms ease-in-out both;
+} */
+
+@keyframes hero-name-appear {
+  0% {
+    opacity: 0;
+    transform: translateX(-120px);
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
