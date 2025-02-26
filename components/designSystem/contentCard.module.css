@@ -1,0 +1,10 @@
+.contentCard {
+  @apply rounded-xl shadow-xl overflow-hidden w-72 h-48 relative hover:scale-105 transition-transform shrink-0;
+}
+
+.titleRow {
+  @apply px-2 py-1 absolute left-0 bottom-0 right-0;
+  @apply bg-gradient-to-t from-slate-800;
+  @apply flex justify-center items-center gap-1.5;
+  @apply text-white; /* text-shadow needs to be applied in the tsx file :( */
+}

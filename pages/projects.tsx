@@ -1,14 +1,11 @@
 import Head from "next/head"
-import Image from "next/image"
-import { ContentCard } from "../components/ContentCard"
+import { ContentCard } from "../components/designSystem/ContentCard"
 import { Header } from "../components/Header"
 import { Main } from "../components/Main"
 import { Page } from "../components/Page"
-import styles from "../styles/Home.module.css"
 import { projectData } from "../data/projects"
 import { PageTitle } from "../components/PageTitle"
-
-// Add NHL data & NYT extension
+import { ProjectDialog } from "../components/ProjectDialog"
 
 export default function Projects() {
   return (
@@ -20,17 +17,17 @@ export default function Projects() {
       </Head>
       <Header />
       <Main>
-        <PageTitle title="Projects" description="" />
-        <div className="flex grid-flow-row row-auto columns-auto gap-4">
-          {projectData.map((project) => (
-            <ContentCard
-              key={project.title}
-              title={project.title}
-              description={project.description}
-              imgSrc={project.imgSrc}
-              url={project.url}
-            />
-          ))}
+        <div className="flex flex-col gap-12">
+          <PageTitle title="Projects" description="I made these things!" />
+          <div className="flex flex-wrap gap-4">
+            {projectData.map((project) => (
+              <ProjectDialog
+                key={project.title}
+                project={project}
+                trigger={<ContentCard key={project.title} title={project.title} imgSrc={project.imgSrc} />}
+              />
+            ))}
+          </div>
         </div>
       </Main>
       <footer className="flex"></footer>

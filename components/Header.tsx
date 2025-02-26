@@ -1,8 +1,8 @@
-import { Avatar } from "./Avatar"
-import { Button } from "./Button"
+import { Avatar } from "./designSystem/Avatar"
+import { Button } from "./designSystem/Button"
 import { useUIContext } from "./contexts/UIContext"
 import headerStyles from "./header.module.css"
-import { Menu } from "./Icon"
+import { Menu } from "./designSystem/Icon"
 
 export const Header = () => {
   const { navOpen, setNavOpen } = useUIContext()

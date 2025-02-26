@@ -1,8 +1,8 @@
 import Link from "next/link"
 import { contactEmailUrl } from "../utils/contactEmailUrl"
-import { Button } from "./Button"
+import { Button } from "./designSystem/Button"
 import { useUIContext } from "./contexts/UIContext"
-import { Close, Hammer, Mail, Resume } from "./Icon"
+import { Close, Hammer, Mail, Resume } from "./designSystem/Icon"
 import navStyles from "./nav.module.css"
 
 export const NavList = () => {

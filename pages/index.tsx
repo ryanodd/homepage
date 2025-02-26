@@ -6,6 +6,8 @@ import { ContentPreviewSection } from "../components/ContentPreviewSection"
 import { projectData } from "../data/projects"
 import { HeroSection } from "../components/HeroSection"
 import { ContactSection } from "../components/ContactSection"
+import { ProjectDialog } from "../components/ProjectDialog"
+import { ContentCard } from "../components/designSystem/ContentCard"
 
 export default function Home() {
   return (
@@ -17,9 +19,19 @@ export default function Home() {
       </Head>
       <Header />
       <Main>
-        <HeroSection />
-        <ContentPreviewSection title="Projects" contentItems={projectData} />
-        <ContactSection />
+        <div className="flex flex-col gap-28">
+          <HeroSection />
+          <ContentPreviewSection title="Projects">
+            {projectData.map((project) => (
+              <ProjectDialog
+                key={project.title}
+                project={project}
+                trigger={<ContentCard key={project.title} title={project.title} imgSrc={project.imgSrc} />}
+              />
+            ))}
+          </ContentPreviewSection>
+          <ContactSection />
+        </div>
       </Main>
 
       <footer className="flex"></footer>

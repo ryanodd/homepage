@@ -2,6 +2,14 @@
   @apply max-w-none shrink-0;
 }
 
+.icon[data-size="sm"] {
+  @apply w-4 h-4;
+}
+
+.icon[data-size="md"] {
+  @apply w-5 h-5;
+}
+
 .icon {
   /* Default data-size="lg" */
   @apply w-6 h-6;

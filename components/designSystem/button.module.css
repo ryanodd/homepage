@@ -1,5 +1,5 @@
 .button {
-  @apply shadow-sm flex items-center justify-center;
+  @apply shadow-sm flex items-center justify-center gap-2;
 }
 
 .button {
@@ -7,7 +7,7 @@
   @apply h-10 px-3 rounded-md text-base;
 }
 .button[data-icon-only="true"] {
-  @apply w-10;
+  @apply w-10 px-1 py-1;
 }
 
 .button[data-size="large"] {
@@ -40,8 +40,17 @@
   @apply bg-opacity-5 bg-stone-900;
 }
 
-.button:disabled {
-  @apply bg-stone-500 border-stone-500;
+.button[data-variant="tertiary-alt"] {
+  @apply bg-transparent text-stone-50 border-none shadow-none;
+}
+.button[data-variant="tertiary-alt"]:hover {
+  @apply bg-opacity-5 bg-stone-900;
+}
+
+.button:disabled,
+.button[aria-disabled="true"],
+.button[aria-disabled="true"]:hover {
+  @apply bg-gray-300 border-gray-500;
 }
 
 .button[data-variant="destructive"] {

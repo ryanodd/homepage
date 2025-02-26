@@ -13,11 +13,5 @@
 }
 
 .mainColumn {
-  @apply w-full max-w-7xl flex flex-col gap-20;
-}
-
-@media (min-width: 1000px) {
-  .mainColumn {
-    @apply gap-32;
-  }
+  @apply w-full max-w-7xl flex flex-col gap-4;
 }

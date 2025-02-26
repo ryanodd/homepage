@@ -4,7 +4,7 @@ import styles from "./button.module.css"
 type Props = {
   children?: ReactNode
   "data-size"?: "small" | "large"
-  "data-variant"?: "primary" | "secondary" | "tertiary" | "destructive"
+  "data-variant"?: "primary" | "secondary" | "tertiary" | "tertiary-alt" | "destructive"
   "data-loading"?: boolean
   "data-icon-only"?: boolean
 }
@@ -17,12 +17,12 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(({ className, .
 
 Button.displayName = "Button"
 
-export type ButtonStyledAsLinkProps = ComponentPropsWithoutRef<"a"> & Props
+export type LinkStyledAsButtonProps = ComponentPropsWithoutRef<"a"> & Props
 
-export const ButtonStyledAsLink = forwardRef<HTMLAnchorElement, ButtonStyledAsLinkProps>(
+export const LinkStyledAsButton = forwardRef<HTMLAnchorElement, LinkStyledAsButtonProps>(
   ({ className, ...restProps }, ref) => {
     return <a ref={ref} {...restProps} className={`${styles.button} ${className ?? ""}`} />
   }
 )
 
-ButtonStyledAsLink.displayName = "ButtonStyledAsLink"
+LinkStyledAsButton.displayName = "LinkStyledAsButton"

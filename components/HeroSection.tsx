@@ -1,4 +1,4 @@
-import { Avatar } from "./Avatar"
+import { Avatar } from "./designSystem/Avatar"
 import heroSectionStyles from "./heroSection.module.css"
 
 export const HeroSection = () => {

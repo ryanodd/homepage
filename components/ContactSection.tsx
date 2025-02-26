@@ -1,5 +1,5 @@
 import { contactEmailUrl } from "../utils/contactEmailUrl"
-import { ButtonStyledAsLink } from "./Button"
+import { LinkStyledAsButton } from "./designSystem/Button"
 import contactSectionStyles from "./contactSection.module.css"
 import { SectionHeader } from "./SectionHeader"
 
@@ -9,12 +9,12 @@ export const ContactSection = () => {
       <SectionHeader title="Let's work together" description="I can help with your frontend project." />
 
       <div className={contactSectionStyles.contactActionRow}>
-        <ButtonStyledAsLink href="./Resume.pdf" target="_blank" rel="noopener noreferrer" data-variant="secondary">
+        <LinkStyledAsButton href="./Resume.pdf" target="_blank" rel="noopener noreferrer" data-variant="secondary">
           Resume.pdf
-        </ButtonStyledAsLink>
-        <ButtonStyledAsLink href={contactEmailUrl()} data-variant="primary">
+        </LinkStyledAsButton>
+        <LinkStyledAsButton href={contactEmailUrl()} data-variant="primary">
           Contact me
-        </ButtonStyledAsLink>
+        </LinkStyledAsButton>
       </div>
     </div>
   )

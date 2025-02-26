@@ -1,0 +1,59 @@
+.dialogContent {
+  @apply z-20 absolute left-1/2 top-1/2;
+  transform: translate(-50%, -50%);
+
+  @apply w-full;
+  max-width: calc(100% - 20px);
+  max-height: calc(100% - 20px);
+  @apply bg-slate-50 shadow-md rounded-lg overflow-hidden;
+  @apply flex flex-col gap-4;
+  @apply p-4;
+}
+
+.dialogOverlay {
+  @apply z-10 absolute inset-0 bg-slate-900 bg-opacity-20;
+}
+
+.dialogHeader {
+  @apply flex gap-2;
+}
+
+.dialogTitleSection {
+  @apply self-center flex flex-col items-center text-center;
+}
+
+.dialogTitle {
+  @apply text-2xl;
+}
+
+.dialogDescription {
+}
+
+.dialogTopLeftContent {
+  @apply basis-0 shrink-0 grow mr-auto;
+  @apply flex justify-start items-start;
+}
+
+.dialogTopRightContent {
+  @apply basis-0 shrink-0 grow ml-auto;
+  @apply flex justify-end items-start;
+}
+
+.dialogBody {
+  @apply flex flex-col gap-4 overflow-y-auto;
+}
+
+@media (min-width: 1000px) {
+  .dialogContent {
+    @apply m-0;
+    width: 400px;
+  }
+
+  .dialogContent[data-size="lg"] {
+    width: 600px;
+  }
+
+  .dialogContent[data-size="xl"] {
+    width: 800px;
+  }
+}
