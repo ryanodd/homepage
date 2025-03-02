@@ -3,15 +3,21 @@
 }
 
 .mainContainer {
-  @apply w-full px-8 py-8 overflow-y-auto flex flex-col items-center;
+  /* @apply; */
+  @apply basis-0 grow min-w-0 min-h-0 overflow-hidden relative;
+}
+
+.scrollableContainer {
+  @apply w-full h-full overflow-y-auto flex flex-col items-center;
+  @apply px-8 pt-8 pb-12;
 }
 
 @media (min-width: 1000px) {
-  .mainContainer {
-    @apply px-20 py-20;
+  .scrollableContainer {
+    @apply px-20 pt-20 pb-32;
   }
 }
 
 .mainColumn {
-  @apply w-full max-w-7xl flex flex-col gap-4;
+  @apply relative z-10 w-full max-w-7xl flex flex-col gap-4;
 }

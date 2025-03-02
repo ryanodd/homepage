@@ -1,0 +1,49 @@
+/* Create the background container */
+.background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  inset: 0;
+  overflow: hidden;
+}
+
+/* Style the SVG waves */
+.wave {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  inset: 0;
+}
+
+.wave1 path {
+  fill: rgba(255, 157, 0, 0.17);
+  animation: waveMovingLeftAnimation 330s linear infinite;
+}
+
+.wave2 path {
+  fill: rgba(0, 174, 255, 0.12);
+  animation: waveMovingLeftAnimation 200s linear infinite;
+}
+
+.wave3 path {
+  fill: rgba(24, 255, 74, 0.12);
+  animation: waveMovingRightAnimation 240s linear infinite;
+}
+
+@keyframes waveMovingLeftAnimation {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-800%);
+  }
+}
+
+@keyframes waveMovingRightAnimation {
+  0% {
+    transform: translateX(-800%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}

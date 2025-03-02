@@ -1,5 +1,6 @@
 .contentCard {
-  @apply rounded-xl shadow-xl overflow-hidden w-72 h-48 relative hover:scale-105 transition-transform shrink-0;
+  @apply rounded-xl shadow-xl overflow-hidden w-72 h-48 relative hover:scale-105 shrink-0;
+  transition: transform 100ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .titleRow {
