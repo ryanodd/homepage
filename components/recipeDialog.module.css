@@ -2,27 +2,31 @@
   @apply flex flex-col items-center gap-4;
 }
 
-@media (min-width: 1000px) {
-  .body {
-    @apply flex-row items-stretch;
-  }
+.previewImage {
+  @apply w-72 h-44 shrink-0 rounded-md overflow-hidden shadow-md;
+  @apply relative;
 }
 
-.previewImage {
-  @apply w-80 h-60 shrink-0 rounded-md overflow-hidden shadow-sm;
-  @apply relative;
+@media (min-width: 1000px) {
+  .previewImage {
+    @apply w-80 h-48;
+  }
 }
 
 .description {
   line-height: 1.1;
+  @apply w-full;
   @apply flex flex-col gap-4;
   @apply text-stone-800 whitespace-pre-line;
 }
 
-.footer {
-  @apply flex gap-2;
+.sectionHeader {
+  @apply text-xl font-semibold;
 }
 
+.footer {
+  @apply w-full;
+}
 .footer > * {
-  @apply basis-0 grow;
+  @apply w-full;
 }

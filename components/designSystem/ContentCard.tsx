@@ -1,6 +1,7 @@
 import Image, { StaticImageData } from "next/image"
 import contentCardStyles from "./contentCard.module.css"
 import { ComponentPropsWithoutRef, forwardRef } from "react"
+import { ExternalLink } from "./Icon"
 
 export type ContentCardProps = ComponentPropsWithoutRef<"button"> & {
   title: string
@@ -11,7 +12,7 @@ export const ContentCard = forwardRef<HTMLButtonElement, ContentCardProps>(({ ti
   return (
     <button className={contentCardStyles.contentCard} ref={ref} {...props}>
       <Image src={image} alt={title} fill style={{ objectFit: "cover" }} placeholder="blur" />
-      <div className={`${contentCardStyles.titleRow} text-shadow`}>{title}</div>
+      <div className={`${contentCardStyles.titleRow}`}>{title}</div>
     </button>
   )
 })
@@ -28,7 +29,10 @@ export const ContentCardLink = forwardRef<HTMLAnchorElement, ContentCardLinkProp
     return (
       <a className={contentCardStyles.contentCard} ref={ref} {...props}>
         <Image src={image} alt={title} fill style={{ objectFit: "cover" }} placeholder="blur" />
-        <div className={`${contentCardStyles.titleRow} text-shadow`}>{title}</div>
+        <div className={`${contentCardStyles.titleRow}`}>
+          {title}
+          <ExternalLink size="sm" />
+        </div>
       </a>
     )
   }

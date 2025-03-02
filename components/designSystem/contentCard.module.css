@@ -3,8 +3,15 @@
 }
 
 .titleRow {
-  @apply px-2 py-1 absolute left-0 bottom-0 right-0;
-  @apply bg-gradient-to-t from-slate-800;
-  @apply flex justify-center items-center gap-1.5;
+  @apply px-4  pb-1 pt-2 absolute left-0 bottom-0 right-0;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.7) 0%,
+    rgba(0, 0, 0, 0.7) 80%,
+    rgba(0, 0, 0, 0.5) 85%,
+    rgba(0, 0, 0, 0) 90%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  @apply flex justify-center items-center gap-3;
   @apply text-lg text-white; /* text-shadow needs to be applied in the tsx file :( */
 }

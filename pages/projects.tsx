@@ -18,7 +18,7 @@ export default function Projects() {
       <Header />
       <Main>
         <div className="flex flex-col gap-12">
-          <PageTitle title="Projects" description="I made these things!" />
+          <PageTitle title="Projects" description="I made these." />
           <div className="flex flex-wrap gap-4">
             {projectData.map((project) => (
               <ProjectDialog

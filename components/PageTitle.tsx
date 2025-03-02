@@ -5,9 +5,9 @@ export type PageTitleProps = {
 
 export const PageTitle = ({ title, description }: PageTitleProps) => {
   return (
-    <div className="flex flex-col gap-4">
-      <h1 className="text-5xl ">{title}</h1>
-      {description && <p>{description}</p>}
+    <div className="flex flex-col gap-6">
+      <h1 className="text-6xl ">{title}</h1>
+      {description && <p className="text-xl ml-2">{description}</p>}
     </div>
   )
 }

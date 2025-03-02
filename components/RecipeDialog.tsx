@@ -31,25 +31,38 @@ export const RecipeDialog = ({ recipe, trigger }: RecipeDialogProps) => {
         <DialogContent data-size="xl">
           <DialogHeader title={recipe.title} topRightContent={<DialogCloseButton />} />
           <DialogBody>
-            <div className={recipeDialogStyles.footer}>
-              {recipe.url && (
-                <LinkStyledAsButton href={recipe.url} target="_blank" rel="noopener noreferrer" data-variant="primary">
-                  View recipe
-                  <ExternalLink size="md" />
-                </LinkStyledAsButton>
-              )}
-            </div>
             <div className={recipeDialogStyles.body}>
-              {/* <div className={recipeDialogStyles.previewImage}>
-                <Image src={recipe.imgSrc} alt={recipe.title} fill style={{ objectFit: "cover" }} placeholder="blur" />
-              </div> */}
+              <div className={recipeDialogStyles.previewImage}>
+                <Image src={recipe.image} alt={recipe.title} fill style={{ objectFit: "cover" }} placeholder="blur" />
+              </div>
+
               <LinkItUrl className={linkStyles.link}>
-                <div className={recipeDialogStyles.description}>
-                  {recipe.description.map((descriptionSection, i) => (
-                    <p key={i}>{descriptionSection}</p>
-                  ))}
-                </div>
+                {recipe.sections.map((section) => (
+                  <>
+                    {section.title !== undefined && (
+                      <h3 className={recipeDialogStyles.sectionHeader}>{section.title}</h3>
+                    )}
+                    <div className={recipeDialogStyles.description}>
+                      {section.lines.map((line, i) => (
+                        <p key={i}>{line}</p>
+                      ))}
+                    </div>
+                  </>
+                ))}
               </LinkItUrl>
+              <div className={recipeDialogStyles.footer}>
+                {recipe.url && (
+                  <LinkStyledAsButton
+                    href={recipe.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    data-variant="secondary"
+                  >
+                    View recipe
+                    <ExternalLink size="md" />
+                  </LinkStyledAsButton>
+                )}
+              </div>
             </div>
           </DialogBody>
         </DialogContent>
