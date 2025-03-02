@@ -1,7 +1,10 @@
+import { StaticImageData } from "next/image"
+import blackBean from "../public/images/recipes/blackBean.png"
+
 export type Recipe = {
   title: string
   description: string[]
-  imgSrc: string
+  image: StaticImageData
   url?: string
 }
 
@@ -33,7 +36,7 @@ export const recipeData: Recipe[] = [
       "Add the spicy black bean sauce and the chopped green onions to the wok and toss to coat.",
       "Stirfry for another 2-3 minutes until the sauce cooks in to the eggplant and tofu then serve.",
     ],
-    imgSrc: "/images/recipes/blackBean.png",
+    image: blackBean,
     url: "https://loveandgoodstuff.com/spicy-black-bean-tofu-and-eggplant/",
   },
 ]

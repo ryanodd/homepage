@@ -24,7 +24,7 @@ export default function Recipes() {
               <RecipeDialog
                 key={recipe.title}
                 recipe={recipe}
-                trigger={<ContentCard key={recipe.title} title={recipe.title} imgSrc={recipe.imgSrc} />}
+                trigger={<ContentCard key={recipe.title} title={recipe.title} image={recipe.image} />}
               />
             ))}
           </div>

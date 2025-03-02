@@ -9,7 +9,7 @@ export type AvatarProps = {
 export const Avatar = ({ size }: AvatarProps) => {
   return (
     <div className={avatarStyles.avatar} data-size={size}>
-      <Image src={avatarImageSrc} alt="Ryan Odd" />
+      <Image src={avatarImageSrc} alt="Ryan Odd" placeholder="blur" />
     </div>
   )
 }

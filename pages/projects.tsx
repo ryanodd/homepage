@@ -24,7 +24,7 @@ export default function Projects() {
               <ProjectDialog
                 key={project.title}
                 project={project}
-                trigger={<ContentCard key={project.title} title={project.title} imgSrc={project.imgSrc} />}
+                trigger={<ContentCard key={project.title} title={project.title} image={project.image} />}
               />
             ))}
           </div>

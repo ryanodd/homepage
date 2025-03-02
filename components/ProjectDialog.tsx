@@ -33,7 +33,7 @@ export const ProjectDialog = ({ project, trigger }: ProjectDialogProps) => {
           <DialogBody>
             <div className={projectDialogStyles.body}>
               <div className={projectDialogStyles.previewImage}>
-                <Image src={project.imgSrc} alt={project.title} fill style={{ objectFit: "cover" }} />
+                <Image src={project.image} alt={project.title} fill style={{ objectFit: "cover" }} placeholder="blur" />
               </div>
               <LinkItUrl className={linkStyles.link}>
                 <div className={projectDialogStyles.description}>

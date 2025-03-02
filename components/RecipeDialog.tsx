@@ -41,7 +41,7 @@ export const RecipeDialog = ({ recipe, trigger }: RecipeDialogProps) => {
             </div>
             <div className={recipeDialogStyles.body}>
               {/* <div className={recipeDialogStyles.previewImage}>
-                <Image src={recipe.imgSrc} alt={recipe.title} fill style={{ objectFit: "cover" }} />
+                <Image src={recipe.imgSrc} alt={recipe.title} fill style={{ objectFit: "cover" }} placeholder="blur" />
               </div> */}
               <LinkItUrl className={linkStyles.link}>
                 <div className={recipeDialogStyles.description}>

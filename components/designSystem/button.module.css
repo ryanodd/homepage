@@ -1,5 +1,5 @@
 .button {
-  @apply shadow-sm flex items-center justify-center gap-2;
+  @apply shadow-sm flex items-center justify-center gap-2 shrink-0;
 }
 
 .button {

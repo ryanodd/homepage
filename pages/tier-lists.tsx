@@ -23,7 +23,7 @@ export default function TierLists() {
               <ContentCardLink
                 key={tierList.title}
                 title={tierList.title}
-                imgSrc={tierList.imgSrc}
+                image={tierList.image}
                 href={tierList.url}
                 target="_blank"
                 rel="noopener noreferrer"
