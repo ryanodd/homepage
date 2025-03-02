@@ -31,6 +31,11 @@ export default function Home() {
             ))}
           </ContentPreviewSection>
           <ContactSection />
+          {/* <ContentPreviewSection title="Tier lists">
+            {tierListData.map((tierList) => (
+              <ContentCard key={tierList.title} title={tierList.title} imgSrc={tierList.imgSrc} />
+            ))}
+          </ContentPreviewSection> */}
         </div>
       </Main>
 

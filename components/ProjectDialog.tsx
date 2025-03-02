@@ -14,6 +14,8 @@ import projectDialogStyles from "./projectDialog.module.css"
 import { LinkStyledAsButton } from "./designSystem/Button"
 import { ExternalLink, Github } from "./designSystem/Icon"
 import Image from "next/image"
+import { LinkItUrl } from "react-linkify-it"
+import linkStyles from "./designSystem/link.module.css"
 
 export type ProjectDialogProps = {
   project: Project
@@ -33,11 +35,13 @@ export const ProjectDialog = ({ project, trigger }: ProjectDialogProps) => {
               <div className={projectDialogStyles.previewImage}>
                 <Image src={project.imgSrc} alt={project.title} fill style={{ objectFit: "cover" }} />
               </div>
-              <div className={projectDialogStyles.description}>
-                {project.description.map((descriptionSection, i) => (
-                  <p key={i}>{descriptionSection}</p>
-                ))}
-              </div>
+              <LinkItUrl className={linkStyles.link}>
+                <div className={projectDialogStyles.description}>
+                  {project.description.map((descriptionSection, i) => (
+                    <p key={i}>{descriptionSection}</p>
+                  ))}
+                </div>
+              </LinkItUrl>
             </div>
             <div className={projectDialogStyles.footer}>
               {project.githubUrl && (

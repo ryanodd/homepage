@@ -2,7 +2,7 @@ import Link from "next/link"
 import { contactEmailUrl } from "../utils/contactEmailUrl"
 import { Button } from "./designSystem/Button"
 import { useUIContext } from "./contexts/UIContext"
-import { Close, Hammer, Mail, Resume } from "./designSystem/Icon"
+import { Close, Hammer, Mail, OrderedList, Resume, Salad } from "./designSystem/Icon"
 import navStyles from "./nav.module.css"
 
 export const NavList = () => {
@@ -21,10 +21,22 @@ export const NavList = () => {
           Resume
         </Link>
       </li>
-      <li className={navStyles.navItem}>
+      <li className={`${navStyles.navItem} mb-10`}>
         <Link href={contactEmailUrl()}>
           <Mail />
           Contact me
+        </Link>
+      </li>
+      <li className={navStyles.navItem}>
+        <Link href="./recipes">
+          <Salad />
+          Recipes
+        </Link>
+      </li>
+      <li className={navStyles.navItem}>
+        <Link href="./tier-lists">
+          <OrderedList />
+          Tier lists
         </Link>
       </li>
     </ul>
