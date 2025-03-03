@@ -1,5 +1,6 @@
 import { ComponentPropsWithoutRef, ComponentType, forwardRef, HTMLAttributes } from "react"
 
+import CalendarOneSvg from "../../public/images/icons/calendarOne.svg"
 import CloseSvg from "../../public/images/icons/close.svg"
 import ExternalLinkSvg from "../../public/images/icons/externalLink.svg"
 import HammerSvg from "../../public/images/icons/hammer.svg"
@@ -33,6 +34,7 @@ export const createIcon = (SVG: ComponentType<HTMLAttributes<SVGSVGElement>>, la
   return iconComponent
 }
 
+export const CalendarOne = createIcon(CalendarOneSvg, "Calendar")
 export const Close = createIcon(CloseSvg, "Close")
 export const ExternalLink = createIcon(ExternalLinkSvg, "External Link")
 export const Hammer = createIcon(HammerSvg, "Hammer")

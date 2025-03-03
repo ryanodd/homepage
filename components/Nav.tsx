@@ -2,7 +2,7 @@ import Link from "next/link"
 import { contactEmailUrl } from "../utils/contactEmailUrl"
 import { Button } from "./designSystem/Button"
 import { useUIContext } from "./contexts/UIContext"
-import { Close, Hammer, Mail, OrderedList, Resume, Salad } from "./designSystem/Icon"
+import { CalendarOne, Close, Hammer, Mail, OrderedList, Resume, Salad } from "./designSystem/Icon"
 import navStyles from "./nav.module.css"
 
 export const NavList = () => {
@@ -31,6 +31,12 @@ export const NavList = () => {
         <Link href="./recipes">
           <Salad />
           Recipes
+        </Link>
+      </li>
+      <li className={navStyles.navItem}>
+        <Link href="./daily-games">
+          <CalendarOne />
+          Daily games
         </Link>
       </li>
       <li className={navStyles.navItem}>

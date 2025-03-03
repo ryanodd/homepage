@@ -17,7 +17,7 @@ export const projectData: Project[] = [
   {
     title: "Ball Game",
     description: [
-      "A sports game where two players try to score on the opponent's goal. Includes multiple characters with their own unique movement & abilities.",
+      "A sports game where two players try to score on the opponent's goal. Includes multiple characters with their own unique movement & abilities. Requires a keyboard for controls.",
       "Uses real-time netplay with 'rollback' to keep gameplay smooth & responsive over a network connection. Netplay currently has performance issues on non-flawless network connections. \n",
       "- Uses Box2D for gameplay physics\n" +
         "- Gameplay is rendered to HTML canvas\n" +
