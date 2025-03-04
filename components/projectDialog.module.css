@@ -21,8 +21,8 @@
 }
 
 .description {
-  line-height: 1.1;
-  @apply flex flex-col gap-2;
+  line-height: 1.125;
+  @apply flex flex-col gap-4;
   @apply text-stone-800 whitespace-pre-line;
 }
 

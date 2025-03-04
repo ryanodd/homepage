@@ -30,7 +30,7 @@ export const projectData: Project[] = [
   {
     title: "Planks",
     description: [
-      "A puzzle game." + "Reach the goal by picking up planks and placing them between the pegs.\n",
+      "A puzzle game. Reach the goal by picking up planks and placing them between the pegs.\n",
       "- Made with react\n" + "- Uses zustand for state management\n" + "- Stores game progress in local storage",
     ],
     image: planks,
