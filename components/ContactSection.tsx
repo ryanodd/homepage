@@ -3,6 +3,10 @@ import { LinkStyledAsButton } from "./designSystem/Button"
 import contactSectionStyles from "./contactSection.module.css"
 import { SectionHeader } from "./SectionHeader"
 
+/**
+ * I’m a web developer exploring job opportunities. I’ve built websites of all shapes & sizes. I’ve been using React professionally for 5 years, & I’ve built multiple design systems. I also know how to use Shopify, Wordpress & lots of other web technologies. I’d love to chat!
+ */
+
 export const ContactSection = () => {
   return (
     <div className={contactSectionStyles.contactSection}>

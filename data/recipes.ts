@@ -1,6 +1,7 @@
 import { StaticImageData } from "next/image"
 import blackBean from "../public/images/recipes/blackBean.png"
 import peanutCouscous from "../public/images/recipes/peanutCouscous.png"
+import poke from "../public/images/recipes/poke.png"
 
 export type Recipe = {
   title: string
@@ -107,5 +108,45 @@ export const recipeData: Recipe[] = [
     ],
     image: peanutCouscous,
     url: "https://www.ambitiouskitchen.com/thai-peanut-chicken-couscous/",
+  },
+  {
+    title: "Poke",
+    sections: [
+      {
+        lines: [
+          "Makes 4 portions.",
+          "- 2 lbs fresh sushi-grade salmon\n" +
+            "- 2 avocado\n" +
+            "- 1 small red onion\n" +
+            "- 1 green onion stalk\n" +
+            "- Furikake seasoning\n",
+          "Sauce:\n" +
+            "- 1 cup soy sauce \n" +
+            "- 2 tbsp white sugar\n" +
+            "- 3 cloves garlic, crushed\n" +
+            "- 1 tbsp ginger, grated\n" +
+            "- 1 tsp sesame oil\n" +
+            "- 1 tsp rice vinegar\n",
+        ],
+      },
+      {
+        title: "Prep",
+        lines: [
+          "Remove salmon skin & chop into bite-sized cubes.",
+          "Dice red onion.",
+          "Combine fish, sugar, garlic, ginger, sesame oil, rice vinegar, and in large bowl and put in the fridge for 30 minutes.",
+          "Drain & prepare rice.",
+        ],
+      },
+      {
+        title: "Cooking",
+        lines: [
+          "When rice is done cooking and fish is done marinating:",
+          "Chop avocado and green onion.",
+          "Combine all ingredients",
+        ],
+      },
+    ],
+    image: poke,
   },
 ]
