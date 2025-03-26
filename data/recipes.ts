@@ -2,6 +2,7 @@ import { StaticImageData } from "next/image"
 import blackBean from "../public/images/recipes/blackBean.png"
 import peanutCouscous from "../public/images/recipes/peanutCouscous.png"
 import poke from "../public/images/recipes/poke.png"
+import mexicanBowl from "../public/images/recipes/mexicanBowl.png"
 
 export type Recipe = {
   title: string
@@ -18,6 +19,7 @@ export const recipeData: Recipe[] = [
     title: "Black bean eggplant & tofu",
     sections: [
       {
+        title: "Shop",
         lines: [
           "Makes 4 portions.",
           "- 1 large eggplant\n" +
@@ -43,12 +45,12 @@ export const recipeData: Recipe[] = [
         lines: [
           "Press/dry tofu.",
           "Chop tofu, eggplant & broccoli.",
-          "Drain & prepare rice.",
+          "Rinse & prepare rice.",
           "Prepare sauce in a medium sized bowl.",
         ],
       },
       {
-        title: "Cooking",
+        title: "Cook",
         lines: [
           "Heat oil in a large pan over medium-high heat until hot.",
           "Add tofu to the pan and fry for 3-5 minutes until tofu crisps a bit, then remove it to a separate plate.",
@@ -66,6 +68,7 @@ export const recipeData: Recipe[] = [
     title: "Thai peanut couscous",
     sections: [
       {
+        title: "Shop",
         lines: [
           "Makes 4 portions.",
           "- 1.5 cups pearl couscous\n" +
@@ -95,7 +98,7 @@ export const recipeData: Recipe[] = [
         ],
       },
       {
-        title: "Cooking",
+        title: "Cook",
         lines: [
           "Heat oil in a large pan over high heat until hot.",
           "Fry chicken 5 minutes until mostly cooked (it'll finish cooking in the sauce). Remove it to a separate bowl.",
@@ -113,6 +116,7 @@ export const recipeData: Recipe[] = [
     title: "Poke",
     sections: [
       {
+        title: "Shop",
         lines: [
           "Makes 4 portions.",
           "- 2 lbs fresh sushi-grade salmon\n" +
@@ -134,12 +138,13 @@ export const recipeData: Recipe[] = [
         lines: [
           "Remove salmon skin & chop into bite-sized cubes.",
           "Dice red onion.",
-          "Combine fish, sugar, garlic, ginger, sesame oil, rice vinegar, and in large bowl and put in the fridge for 30 minutes.",
-          "Drain & prepare rice.",
+          "Combine fish, red onion, sugar, garlic, ginger, sesame oil, and rice vinegar in large bowl.",
+          "Add enough soy sauce to cover fish. Put in the fridge for 30 minutes.",
+          "Rinse & prepare rice.",
         ],
       },
       {
-        title: "Cooking",
+        title: "Cook",
         lines: [
           "When rice is done cooking and fish is done marinating:",
           "Chop avocado and green onion.",
@@ -148,5 +153,49 @@ export const recipeData: Recipe[] = [
       },
     ],
     image: poke,
+  },
+  {
+    title: "Mexican bowls",
+    sections: [
+      {
+        title: "Shop",
+        lines: [
+          "Makes 4 portions.",
+          "- 1 15oz can of black beans\n" + "- 1 onion\n" + "- 1 cup dry rice\n" + "- 1 sweet potato",
+          "Any of:\n" +
+            "- 2 avocados\n" +
+            "- 1 red pepper\n" +
+            "- Cheese \n" +
+            "- Salsa \n" +
+            "- Sour cream \n" +
+            "- Jalapeno (fresh or pickled)\n",
+          "Bean spice:",
+          "- 1 tbsp cumin\n" + "- 1 tsp paprika\n" + "- 1 clove garlic or 1 tsp garlic powder\n" + "- 1 tbsp salt\n",
+        ],
+      },
+      {
+        title: "Prep",
+        lines: [
+          "Peel & chop sweet potato into small cubes.",
+          "Chop onion & red pepper.",
+          "Open & drain beans.",
+          "Rinse & prepare rice.",
+        ],
+      },
+      {
+        title: "Cook",
+        lines: [
+          "Preheat oven to 425F.",
+          "Spread sweet potatoes on a large baking sheet & coat with olive oil & salt. Put in oven for 15 minutes, then toss/flip the potato cubes, then do 15 more minutes.",
+          "Heat oil in a pan over medium-high heat until hot.",
+          "Fry onions 5 minutes until softened.",
+          "Add peppers & fry until softened.",
+          "Add beans & bean spice. Fry for a bit until beans are hot.",
+          "Chop avocado. Grate cheese.",
+          "Combine everything into bowls!. Finish with cheese, sour ceam, and salsa.",
+        ],
+      },
+    ],
+    image: mexicanBowl,
   },
 ]
