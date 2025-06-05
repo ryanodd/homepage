@@ -8,6 +8,7 @@ import { HeroSection } from "../components/HeroSection"
 import { ContactSection } from "../components/ContactSection"
 import { ProjectDialog } from "../components/ProjectDialog"
 import { ContentCard } from "../components/designSystem/ContentCard"
+import { MarketingSection } from "../components/MarketingSection"
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
       <Main>
         <div className="flex flex-col gap-28">
           <HeroSection />
+          <MarketingSection />
           <ContentPreviewSection title="Projects">
             {projectData.map((project) => (
               <ProjectDialog

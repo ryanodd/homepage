@@ -28,7 +28,7 @@ export const RecipeDialog = ({ recipe, trigger }: RecipeDialogProps) => {
       <DialogTrigger asChild>{trigger}</DialogTrigger>
       <DialogPortal>
         <DialogOverlay />
-        <DialogContent data-size="xl">
+        <DialogContent size="xl">
           <DialogHeader title={recipe.title} topRightContent={<DialogCloseButton />} />
           <DialogBody>
             <div className={recipeDialogStyles.body}>
@@ -56,7 +56,7 @@ export const RecipeDialog = ({ recipe, trigger }: RecipeDialogProps) => {
                     href={recipe.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    data-variant="secondary"
+                    variant="secondary"
                   >
                     View recipe
                     <ExternalLink size="md" />

@@ -30,7 +30,7 @@ export type DialogContentProps = ComponentPropsWithoutRef<typeof Dialog.Content>
    * Indicates the maximum size of the Dialog on medium and large screens.
    * Small screens (below 960px) will not respect this property.
    */
-  "data-size"?: DialogSize
+  size?: DialogSize
 }
 
 export const DialogContent = forwardRef<HTMLDivElement, DialogContentProps>(
@@ -58,7 +58,7 @@ type DialogCloseButtonProps = Omit<ComponentPropsWithoutRef<typeof Dialog.Close>
 export const DialogCloseButton = forwardRef<HTMLButtonElement, DialogCloseButtonProps>(({ ...props }, ref) => {
   return (
     <Dialog.Close asChild {...props} ref={ref}>
-      <Button data-icon-only data-variant="tertiary" aria-label="Close" className="dialog-close-button">
+      <Button iconOnly variant="tertiary" aria-label="Close" className="dialog-close-button">
         <Close />
       </Button>
     </Dialog.Close>

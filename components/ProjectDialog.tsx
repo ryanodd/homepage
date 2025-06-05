@@ -28,7 +28,7 @@ export const ProjectDialog = ({ project, trigger }: ProjectDialogProps) => {
       <DialogTrigger asChild>{trigger}</DialogTrigger>
       <DialogPortal>
         <DialogOverlay />
-        <DialogContent data-size="xl">
+        <DialogContent size="xl">
           <DialogHeader title={project.title} topRightContent={<DialogCloseButton />} />
           <DialogBody>
             <div className={projectDialogStyles.body}>
@@ -49,14 +49,14 @@ export const ProjectDialog = ({ project, trigger }: ProjectDialogProps) => {
                   href={project.githubUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  data-variant="secondary"
+                  variant="secondary"
                 >
                   View source code
                   <Github size="md" />
                 </LinkStyledAsButton>
               )}
               {project.url && (
-                <LinkStyledAsButton href={project.url} target="_blank" rel="noopener noreferrer" data-variant="primary">
+                <LinkStyledAsButton href={project.url} target="_blank" rel="noopener noreferrer" variant="primary">
                   View project
                   <ExternalLink size="md" />
                 </LinkStyledAsButton>

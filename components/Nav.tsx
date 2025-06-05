@@ -76,8 +76,8 @@ export const MobileNav = ({ open }: MobileNavProps) => {
             onClick={() => {
               setNavOpen(false)
             }}
-            data-variant="tertiary"
-            data-icon-only
+            variant="tertiary"
+            iconOnly
           >
             <Close />
           </Button>

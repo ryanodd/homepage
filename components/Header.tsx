@@ -9,11 +9,11 @@ export const Header = () => {
   return (
     <header className="flex flex-row items-center p-5 gap-5 bg-slate-50 shadow-sm z-10">
       <Button
-        data-variant="tertiary"
+        variant="tertiary"
         onClick={() => {
           setNavOpen(!navOpen)
         }}
-        data-icon-only
+        iconOnly
         className={headerStyles.navButton}
       >
         <Menu />

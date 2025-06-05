@@ -4,7 +4,7 @@ import contactSectionStyles from "./contactSection.module.css"
 import { SectionHeader } from "./SectionHeader"
 
 /**
- * I’m a web developer exploring job opportunities. I’ve built websites of all shapes & sizes. I’ve been using React professionally for 5 years, & I’ve built multiple design systems. I also know how to use Shopify, Wordpress & lots of other web technologies. I’d love to chat!
+ * I'm a web developer exploring job opportunities. I've built websites of all shapes & sizes. I've been using React professionally for 5 years, & I've built multiple design systems. I also know how to use Shopify, Wordpress & lots of other web technologies. I'd love to chat!
  */
 
 export const ContactSection = () => {
@@ -13,10 +13,10 @@ export const ContactSection = () => {
       <SectionHeader title="Let's work together" description="I can help with your frontend project." />
 
       <div className={contactSectionStyles.contactActionRow}>
-        <LinkStyledAsButton href="./Resume.pdf" target="_blank" rel="noopener noreferrer" data-variant="secondary">
+        <LinkStyledAsButton href="./Resume.pdf" target="_blank" rel="noopener noreferrer" variant="secondary">
           Resume.pdf
         </LinkStyledAsButton>
-        <LinkStyledAsButton href={contactEmailUrl()} data-variant="primary">
+        <LinkStyledAsButton href={contactEmailUrl()} variant="primary">
           Contact me
         </LinkStyledAsButton>
       </div>

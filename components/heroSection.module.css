@@ -22,7 +22,7 @@
 }
 
 .heroDescription {
-  @apply flex flex-col gap-1 text-gray-700;
+  @apply flex flex-col gap-1 text-gray-800;
 }
 
 .heroNameRow {
