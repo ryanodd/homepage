@@ -19,7 +19,7 @@ export const tierListData: TierList[] = [
   {
     title: "Balatro jokers",
     image: balatroJokers,
-    url: "https://tiermaker.com/create/balatro-joker-tier-list-version-101f-17122176",
+    url: "https://tiermaker.com/list/video-games/balatro-full-jokers-tier-list-version-100k-16227892/5346382",
   },
   {
     title: "Balatro decks",
