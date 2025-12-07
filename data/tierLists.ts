@@ -3,6 +3,7 @@ import rivalsOfAether2 from "../public/images/tierLists/rivalsOfAether2.png"
 import balatroJokers from "../public/images/tierLists/balatroJokers.png"
 import balatroDecks from "../public/images/tierLists/balatroDecks.png"
 import spiritIslandSpirits from "../public/images/tierLists/spiritIslandSpirits.png"
+import partyHouseCharacters from "../public/images/tierLists/partyHouseCharacters.png"
 
 export type TierList = {
   title: string
@@ -31,4 +32,9 @@ export const tierListData: TierList[] = [
     image: spiritIslandSpirits,
     url: "https://tiermaker.com/list/board-games/spirit-island-all-spirits-and-aspects-15439292/4880406",
   },
+  {
+    title: "Party House characters",
+    image: partyHouseCharacters,
+    url: "https://tiermaker.com/list/video-games/party-house-characters-17505815/5734561",
+  }
 ]
