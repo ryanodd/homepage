@@ -10,10 +10,18 @@ import { SectionHeader } from "./SectionHeader"
 export const ContactSection = () => {
   return (
     <div className={contactSectionStyles.contactSection}>
-      <SectionHeader title="Let's work together" description="I can help with your frontend project." />
+      <SectionHeader
+        title="Let's work together"
+        description="I can build your website, or solve your web-related problems."
+      />
 
       <div className={contactSectionStyles.contactActionRow}>
-        <LinkStyledAsButton href="./Resume.pdf" target="_blank" rel="noopener noreferrer" data-variant="secondary">
+        <LinkStyledAsButton
+          href="./Resume.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          data-variant="secondary"
+        >
           Resume.pdf
         </LinkStyledAsButton>
         <LinkStyledAsButton href={contactEmailUrl()} data-variant="primary">

@@ -1,4 +1,5 @@
 import { StaticImageData } from "next/image"
+import designSystem from "../public/images/projects/designSystem.png"
 import ballGame from "../public/images/projects/ballGame.png"
 import planks from "../public/images/projects/planks.png"
 import nytPencil from "../public/images/projects/nytPencil.png"
@@ -14,6 +15,18 @@ export type Project = {
 }
 
 export const projectData: Project[] = [
+  {
+    title: "Design System",
+    description: [
+      "A React UI component library for my web projects.",
+      "- Has a Storybook page with interactive examples\n" +
+      "- Built on Radix UI\n" +
+      "- Accessible, themable\n",
+    ],
+    image: designSystem,
+    url: "https://designsystem.ryanodd.com",
+    githubUrl: "https://github.com/ryanodd/design-system",
+  },
   {
     title: "Ball Game",
     description: [
