@@ -1,10 +1,13 @@
 .dialogContent {
-  @apply z-20 absolute left-1/2 top-1/2;
+  @apply z-20 fixed left-1/2 top-1/2;
+  --dialog-margin: 40px;
   transform: translate(-50%, -50%);
 
   @apply w-full;
-  max-width: calc(100% - 20px);
-  max-height: calc(100% - 20px);
+  max-width: calc(100% - var(--dialog-margin));
+  max-height: calc(100% - var(--dialog-margin));
+  /* In case dvh is supported by the browser: */
+  max-height: calc(100dvh - var(--dialog-margin)); 
   @apply bg-slate-50 shadow-md rounded-lg overflow-hidden;
   @apply flex flex-col;
   @apply gap-2 pt-2 pb-4 px-4;
@@ -30,7 +33,7 @@
 }
 
 .dialogOverlay {
-  @apply z-10 absolute inset-0 bg-slate-900 bg-opacity-20;
+  @apply z-10 fixed inset-0 bg-slate-900 bg-opacity-20;
 }
 
 .dialogHeader {
