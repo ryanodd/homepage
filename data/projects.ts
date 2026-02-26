@@ -18,9 +18,9 @@ export const projectData: Project[] = [
   {
     title: "Design System",
     description: [
-      "A React UI component library for my web projects.",
+      "A UI component library for my web projects.",
       "- Has a Storybook page with interactive examples\n" +
-      "- Built on Radix UI\n" +
+      "- Built on Radix UI (React)\n" +
       "- Accessible, themable\n",
     ],
     image: designSystem,

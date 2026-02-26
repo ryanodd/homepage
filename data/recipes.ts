@@ -3,6 +3,7 @@ import blackBean from "../public/images/recipes/blackBean.png"
 import peanutCouscous from "../public/images/recipes/peanutCouscous.png"
 import poke from "../public/images/recipes/poke.png"
 import mexicanBowl from "../public/images/recipes/mexicanBowl.png"
+import butterChicken from "../public/images/recipes/butterChicken.png"
 
 export type Recipe = {
   title: string
@@ -120,6 +121,7 @@ export const recipeData: Recipe[] = [
         lines: [
           "Makes 4 portions.",
           "- 2 lbs fresh sushi-grade salmon\n" +
+            "- 2 cups dry white rice\n" +
             "- 2 avocado\n" +
             "- 1 small red onion\n" +
             "- 1 green onion stalk\n" +
@@ -197,5 +199,61 @@ export const recipeData: Recipe[] = [
       },
     ],
     image: mexicanBowl,
+  },
+  {
+    title: "Butter chicken",
+    sections: [
+      {
+        title: "Shop",
+        lines: [
+          "- 1 lb boneless and skinless chicken thighs or breasts\n" +
+            "- 1/2 cup plain yogurt\n" +
+            "- 1 large onion\n" +
+            "- 14 oz (400 g) passata crushed tomatoes\n" +
+            "- 200ml heavy or thickened cream",
+          "Marinade:\n" +
+            "- 1 1/2 tablespoons minced garlic\n" +
+            "- 1 tablespoon minced ginger\n" +
+            "- 2 teaspoons garam masala\n" +
+            "- 1 teaspoon turmeric\n" +
+            "- 1 teaspoon ground cumin\n" +
+            "- 1 teaspoon red chili powder\n" +
+            "- 1 teaspoon of salt",
+          "Sauce & Spices:\n" +
+            "- 1 1/2 tablespoons garlic\n" +
+            "- 1 tablespoon ginger\n" +
+            "- 1 1/2 teaspoons ground cumin\n" +
+            "- 1 1/2 teaspoons garam masala\n" +
+            "- 1 teaspoon ground coriander\n" +
+            "- 1 teaspoon red chili powder\n" +
+            "- 1 1/4 teaspoons salt\n" +
+            "- Sugar (optional)\n" +
+            "- 1/2 teaspoon kasoori methi (optional)\n" +
+            "- Fresh cilantro (optional)",
+        ],
+      },
+      {
+        title: "Prep",
+        lines: [
+          "Day before: Combine chicken with marinade ingredients; let marinate overnight.",
+          "Finely dice onion.",
+          "Mince garlic and grate ginger.",
+        ],
+      },
+      {
+        title: "Cook",
+        lines: [
+          "Heat oil in a large skillet or pot over medium-high heat. Fry chicken in batches until browned. Set aside.",
+          "Heat oil in same pan. Add coriander, cumin, garam masala, chili powder. Stir 3-4 minutes.",
+          "Fry onions until sweating (about 6 minutes).",
+          "Add garlic and ginger, sauté for 1 minute.",
+          "Add crushed tomatoes and salt. Simmer 10-15 minutes until thickened.",
+          "Stir in cream and kasoori methi. Add chicken back. Cook 8-10 minutes.",
+          "Adjust seasoning (salt/sugar). Garnish with cilantro.",
+        ],
+      },
+    ],
+    image: butterChicken,
+    url: "https://cafedelites.com/butter-chicken/#recipe",
   },
 ]

@@ -12,9 +12,8 @@ export const ContactSection = () => {
     <div className={contactSectionStyles.contactSection}>
       <SectionHeader
         title="Let's work together"
-        description="I can build your website, or solve your web-related problems."
+        description="I can build your website, or help solve web-related problems."
       />
-
       <div className={contactSectionStyles.contactActionRow}>
         <LinkStyledAsButton
           href="./Resume.pdf"
