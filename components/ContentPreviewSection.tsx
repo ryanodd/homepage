@@ -7,11 +7,17 @@ export type ContentPreviewSectionProps = {
   children: ReactNode
 }
 
-export const ContentPreviewSection = ({ title, description, children }: ContentPreviewSectionProps) => {
+export const ContentPreviewSection = ({
+  title,
+  description,
+  children,
+}: ContentPreviewSectionProps) => {
   return (
-    <div className="flex flex-col gap-2">
+    <section className="flex flex-col gap-2">
       <SectionHeader title={title} description={description} />
-      <div className="flex -mx-8 px-8 py-8 gap-4 overflow-x-scroll">{children}</div>
-    </div>
+      <div className="flex -mx-8 px-8 py-8 gap-4 overflow-x-scroll">
+        {children}
+      </div>
+    </section>
   )
 }

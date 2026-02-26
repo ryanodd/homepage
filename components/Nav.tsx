@@ -2,7 +2,15 @@ import Link from "next/link"
 import { contactEmailUrl } from "../utils/contactEmailUrl"
 import { Button } from "./designSystem/Button"
 import { useUIContext } from "./contexts/UIContext"
-import { CalendarOne, Close, Hammer, Mail, OrderedList, Resume, Salad } from "./designSystem/Icon"
+import {
+  CalendarOne,
+  Close,
+  Hammer,
+  Mail,
+  OrderedList,
+  Resume,
+  Salad,
+} from "./designSystem/Icon"
 import navStyles from "./nav.module.css"
 
 export const NavList = () => {
@@ -54,9 +62,9 @@ export type DesktopNavProps = {}
 export const DesktopNav = ({}: DesktopNavProps) => {
   return (
     <>
-      <div className={`${navStyles.desktopNavContainer}`}>
+      <nav className={`${navStyles.desktopNavContainer}`}>
         <NavList />
-      </div>
+      </nav>
     </>
   )
 }
@@ -70,7 +78,7 @@ export const MobileNav = ({ open }: MobileNavProps) => {
   return (
     <>
       <div className={navStyles.navOverlay} data-open={open} />
-      <div className={navStyles.mobileNavContainer} data-open={open}>
+      <nav className={navStyles.mobileNavContainer} data-open={open}>
         <div className="flex justify-end items-center">
           <Button
             onClick={() => {
@@ -83,7 +91,7 @@ export const MobileNav = ({ open }: MobileNavProps) => {
           </Button>
         </div>
         <NavList />
-      </div>
+      </nav>
     </>
   )
 }

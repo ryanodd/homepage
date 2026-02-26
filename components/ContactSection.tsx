@@ -9,7 +9,7 @@ import { SectionHeader } from "./SectionHeader"
 
 export const ContactSection = () => {
   return (
-    <div className={contactSectionStyles.contactSection}>
+    <section className={contactSectionStyles.contactSection}>
       <SectionHeader
         title="Let's work together"
         description="I can build your website, or help solve web-related problems."
@@ -27,6 +27,6 @@ export const ContactSection = () => {
           Contact me
         </LinkStyledAsButton>
       </div>
-    </div>
+    </section>
   )
 }

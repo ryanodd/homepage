@@ -7,9 +7,13 @@ export type SectionHeaderProps = {
 
 export const SectionHeader = ({ title, description }: SectionHeaderProps) => {
   return (
-    <div className={sectionHeaderStyles.sectionHeader}>
+    <header className={sectionHeaderStyles.sectionHeader}>
       <h2 className={sectionHeaderStyles.sectionHeaderTitle}>{title}</h2>
-      {description && <p className={sectionHeaderStyles.sectionHeaderDescription}>{description}</p>}
-    </div>
+      {description && (
+        <p className={sectionHeaderStyles.sectionHeaderDescription}>
+          {description}
+        </p>
+      )}
+    </header>
   )
 }
