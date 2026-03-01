@@ -4,6 +4,7 @@ import peanutCouscous from "../public/images/recipes/peanutCouscous.png"
 import poke from "../public/images/recipes/poke.png"
 import mexicanBowl from "../public/images/recipes/mexicanBowl.png"
 import butterChicken from "../public/images/recipes/butterChicken.png"
+import stirFry from "../public/images/recipes/stirFry.png"
 
 export type Recipe = {
   title: string
@@ -256,4 +257,51 @@ export const recipeData: Recipe[] = [
     image: butterChicken,
     url: "https://cafedelites.com/butter-chicken/#recipe",
   },
-]
+  {
+    title: "Stir fry",
+    sections: [
+      {
+        title: "Shop",
+        lines: [
+          "Makes 4 portions.",
+          "1lb boneless skinless chicken thighs\n" +
+            "OR\n" +
+            "1 block extra firm tofu\n",
+          "1 Broccoli\n" +
+            "2 Carrots, diced\n" +
+            "1 Red pepper\n" +
+            "2 eggs\n" +
+            "Egg noodles\n",
+          "Sauce:\n" +
+            "1/2 cup soy sauce\n" +
+            "1/2 cup oyster sauce\n" +
+            "1/4 cup corn starch\n" +
+            "1 tbsp sugar\n" +
+            "2 tbsp sesame oil\n",
+        ],
+      },
+      {
+        title: "Prep",
+        lines: [
+          "Chop & fry chicken in the eventual onion pan, separate into bowl.\n" +
+            "OR\n" +
+            "Press, dice, & bake tofu.",
+          "Chop broccoli, carrots, pepper.",
+          "Combine sauce ingredients in a medium sized bowl.",
+        ],
+      },
+      {
+        title: "Cook",
+        lines: [
+          "On fairly high heat, add onions & carrots.",
+          "Once onion are cooked-ish, add red peppers & broccoli.",
+          "Once veggies are mostly done, add sauce & protein.",
+          "In parallel, boil & strain noodles.",
+          "Put the noodles back in the pot off-heat, add eggs & mix until eggs are cooked.",
+          "Combine noodles & veggies.",
+        ],
+      },
+    ],
+    image: stirFry,
+  },
+] 
