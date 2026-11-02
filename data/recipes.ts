@@ -273,12 +273,12 @@ export const recipeData: Recipe[] = [
             "2 eggs\n" +
             "Egg noodles\n",
           "Sauce:\n" +
-            "1/2 cup soy sauce\n" +
-            "1/2 cup oyster sauce\n" +
-            "1/4 cup corn starch\n" +
-            "1/4 cup Chinese cooking wine\n" +
-            "1 tbsp sugar\n" +
-            "2 tbsp sesame oil\n",
+            "1/4 cup soy sauce\n" +
+            "1/4 cup oyster sauce\n" +
+            "2 tbsp corn starch\n" +
+            "2 tbsp Chinese cooking wine\n" +
+            "1/2 tbsp sugar\n" +
+            "1 tbsp sesame oil\n",
         ],
       },
       {
